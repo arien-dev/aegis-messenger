@@ -512,12 +512,14 @@ input:focus, select:focus, textarea:focus {
 
 .primary-btn {
   background: var(--accent);
-  color: white;
+  color: #090a0f;
+  font-weight: 700;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .primary-btn:hover {
   background: var(--accent-hover);
+  color: #090a0f;
 }
 
 .secondary-btn {
@@ -1288,11 +1290,12 @@ input:checked + .slider:before {
   to { transform: rotate(360deg); }
 }
 
-/* Own messages: solid blue, white text, subtle shadow */
+/* Own messages: refined dark graphite, light text, subtle border */
 .msg-bubble.own {
   align-self: flex-end;
   background: var(--msg-own);
   color: var(--msg-own-text);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px 16px 4px 16px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1319,7 +1322,7 @@ input:checked + .slider:before {
 
 .msg-tick {
   font-size: 11px;
-  color: #93c5fd;
+  color: var(--accent);
 }
 
 /* ==========================================================================
@@ -1381,11 +1384,12 @@ input:checked + .slider:before {
   border-radius: 50%;
   flex-shrink: 0;
   background: var(--accent);
-  color: white;
+  color: #090a0f;
 }
 
 .send-btn:hover {
   background: var(--accent-hover);
+  color: #090a0f;
 }
 
 /* ==========================================================================
