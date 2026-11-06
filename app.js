@@ -2964,12 +2964,12 @@ function renderGroupsList() {
     const displayName = escapeHtml(g.name);
 
     li.innerHTML = `
-      <div class="avatar" style="background: linear-gradient(135deg, var(--accent-pink), var(--accent));">👥</div>
+      <div class="avatar">👥</div>
       <div class="contact-details">
         <span class="contact-name">${displayName}</span>
         <span class="contact-id">${g.members.length + 1} Mitglieder</span>
       </div>
-      <span class="contact-type-tag" style="background: rgba(236, 72, 153, 0.15); color: var(--accent-pink);">E2EE Mesh</span>
+      <span class="contact-type-tag">Gruppe</span>
     `;
     li.addEventListener('click', () => selectGroup(g));
     list.appendChild(li);
